@@ -1,0 +1,70 @@
+.container {
+    margin: auto;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form {
+    text-align: center;
+}
+.input {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+.add {
+    background-color: #cccac6;
+    color: rgb(13, 13, 13);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+}
+.leading {
+    text-align: center;
+    margin-top: 50px;
+}
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+.thead {
+    padding: 50px;
+    background-color: #ffcc00;
+    color: rgb(16, 16, 16);
+    text-align: center;
+}
+.tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.tbody td:first-child {
+    font-weight: bold;
+}
+.green-btn {
+    background-color: rgb(105, 225, 105);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.red-btn {
+    background-color: rgb(237, 114, 114);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}

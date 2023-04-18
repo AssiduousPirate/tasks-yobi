@@ -1,0 +1,8 @@
+/use case1/web-server/node_modules
+/use case1/web-server/package-lock.json
+/use case1/spa/node_modules
+/use case1/spa/package-lock.json
+/use case2/web-server/node_modules
+/use case2/web-server/package-lock.json
+/use case2/spa/node_modules
+/use case2/spa/package-lock.json
