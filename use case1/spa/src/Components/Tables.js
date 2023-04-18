@@ -1,34 +1,34 @@
-import React from "react";
-import DataService from "../Services/sevices";
+import React from "react"
+import DataService from "../Services/sevices"
 
 class Tables extends React.Component {
     constructor(props) {
-        super(props);
+        super(props)
 
         this.state = {
             data: [],
-        };
+        }
 
-        this.handleColumnNameChange = this.handleColumnNameChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleColumnNameChange = this.handleColumnNameChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     handleColumnNameChange(event, id) {
-        const { data } = this.state;
-        const index = data.findIndex((item) => item.id === id);
-        const newData = [...data];
+        const { data } = this.state
+        const index = data.findIndex((item) => item.id === id)
+        const newData = [...data]
         newData[index] = {
             ...newData[index],
             column_name: event.target.value,
-        };
+        }
         this.setState({
             data: newData,
-        });
+        })
     }
 
     handleSubmit(event) {
-        event.preventDefault();
-        const { data } = this.state;
+        event.preventDefault()
+        const { data } = this.state
         const updatePromises = data.map((item) => {
         return DataService.UpdateTable(item.id, { columnName: item.column_name })})
         Promise.all(updatePromises)
